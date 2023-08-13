@@ -1,4 +1,4 @@
-package user;
+package http.placeholderdata;
 
 public class User {
     private int id;
