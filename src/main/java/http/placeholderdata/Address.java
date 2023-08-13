@@ -1,4 +1,4 @@
-package user;
+package http.placeholderdata;
 
 public class Address {
     private String street;

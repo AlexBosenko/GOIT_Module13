@@ -1,4 +1,4 @@
-package user;
+package http.placeholderdata;
 
 public class Company {
     private String name;
