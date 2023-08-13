@@ -140,7 +140,6 @@ public class PlaceHolderUtil {
             HttpGet httpGet = new HttpGet(urlIdPosts);
 
             CloseableHttpResponse response = httpClient.execute(httpGet);
-            System.out.println("Status code = " + response.getStatusLine().getStatusCode());
             String responseBody = new BasicResponseHandler().handleResponse(response);
 
             Type typeToken = TypeToken.getParameterized(List.class, Post.class).getType();
@@ -159,7 +158,6 @@ public class PlaceHolderUtil {
             HttpGet httpGet = new HttpGet(urlIdPosts);
 
             CloseableHttpResponse response = httpClient.execute(httpGet);
-            System.out.println("Status code = " + response.getStatusLine().getStatusCode());
             String responseBody = new BasicResponseHandler().handleResponse(response);
 
             String fileName = "user-" + userId + "-post-" + postId + "-comments.json";
